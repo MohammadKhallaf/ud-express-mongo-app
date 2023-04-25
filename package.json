@@ -1,0 +1,38 @@
+{
+  "name": "mongo-side-project",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A API server built using TypeScript",
+  "author": "Mohammed Khallaf <mohammedkhallaf.dev@gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "build": "npm run tsc",
+    "tsc": "tsc -p tsconfig.json",
+    "dev": "ts-node-dev src/app.ts",
+    "clean": "rm -rf dist/",
+    "start": "ts-node src/app.ts"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.3.0",
+    "mongoose": "^7.0.5",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.16.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "license": "ISC"
+}
